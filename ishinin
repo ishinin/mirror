@@ -1,10 +1,10 @@
 $c[//System-1]
 $if[$varExists[mirror]==true]
    $if[$getVar[mirror]==]
-      $httpGet[<default mirror link>]
+      $httpGet[https://raw.githubusercontent.com/ishinin/mirror/main/source-code]
       $endif
       $else
-         $httpGet[<>]
+         $httpGet[$getVar[mirror]]
    $endif
 
 $c[//Automatically runs the code]
