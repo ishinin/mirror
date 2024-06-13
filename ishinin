@@ -1,0 +1,11 @@
+$c[//System-1]
+$if[$varExists[mirror]==true]
+   $if[$getVar[mirror]==]
+      $httpGet[<default mirror link>]
+      $endif
+      $else
+         $httpGet[<>]
+   $endif
+
+$c[//Automatically runs the code]
+$httpResult
