@@ -1,1 +1,5 @@
-
+$c[//this is just a test version!]
+$var[1;$toLowercase[$message[1]]]
+$if[$var[1]==ping]
+**pong!** `($pingms)`
+    $endif
